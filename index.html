@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarSphere - AI-Powered Exam Preparation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel ="stylesheet" href ="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🧠</span>
+                    <span>ScholarSphere</span>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">Dashboard</a></li>
+                        <li><a href="#">Study Plans</a></li>
+                        <li><a href="#">Practice</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Analytics</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="user-actions">
+                    <div class="user-points">
+                        <i class="fas fa-coins"></i>
+                        <span>1,250 pts</span>
+                    </div>
+                    <button class="btn btn-outline"><i class="fas fa-user"></i> Alex</button>
+                    <button class="btn btn-primary"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="hero">
+            <h1>AI-Powered Exam Preparation</h1>
+            <p>Personalized study plans, smart analytics, and adaptive learning to help you ace your exams</p>
+            <button class="btn btn-primary"><i class="fas fa-rocket"></i> Start Learning Now</button>
+        </div>
+        
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>AI-Powered</h3>
+                <p>Intelligent algorithms create personalized study plans based on your strengths and weaknesses</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Progress Tracking</h3>
+                <p>Monitor your performance with detailed analytics and visual progress reports</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Expert Resources</h3>
+                <p>Access curated study materials, practice tests, and video explanations</p>
+            </div>
+        </div>
+        
+        <div class="dashboard">
+            <div class="sidebar">
+                <div class="progress-card">
+                    <div class="progress-text">
+                        <span>Your Progress</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <p>28 of 43 topics mastered</p>
+                </div>
+                
+                <div class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>Study Plan</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-book"></i>
+                    <span>Subjects</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Performance</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Practice Tests</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </div>
+                
+                <div class="ai-suggestion">
+                    <h4><i class="fas fa-robot"></i> AI Recommendation</h4>
+                    <p>Based on your performance, I suggest focusing on Calculus and Electromagnetism today. These areas show the most room for improvement.</p>
+                    <button class="btn btn-primary" style="margin-top: 10px; width: 100%">
+                        <i class="fas fa-magic"></i> Generate Plan
+                    </button>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-check-circle" style="font-size: 32px; color: var(--success);"></i>
+                        <div class="stat-value">42</div>
+                        <div class="stat-label">Topics Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-fire" style="font-size: 32px; color: var(--accent);"></i>
+                        <div class="stat-value">18</div>
+                        <div class="stat-label">Day Streak</div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock" style="font-size: 32px; color: var(--primary);"></i>
+                        <div class="stat-value">62h</div>
+                        <div class="stat-label">Total Study Time</div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h2 class="section-title"><i class="fas fa-user-graduate"></i> Welcome back, Alex!</h2>
+                    <p>Here's your personalized study plan for today. You have <strong>3 tasks</strong> to complete.</p>
+                    
+                    <div class="study-plan">
+                        <div class="day-card">
+                            <h4>Mathematics - Calculus</h4>
+                            <p>Review differentiation rules and practice 10 problems. Focus on chain rule applications.</p>
+                            <div class="card-actions">
+                                <div class="time-estimate">
+                                    <i class="far fa-clock"></i>
+                                    <span>45 min</span>
+                                </div>
+                                <button class="btn btn-primary">Start Session</button>
+                            </div>
+                        </div>
+                        
+                        <div class="day-card">
+                            <h4>Physics - Electromagnetism</h4>
+                            <p>Study Faraday's law and complete concept checklist. Watch recommended video explanations.</p>
+                            <div class="card-actions">
+                                <div class="time-estimate">
+                                    <i class="far fa-clock"></i>
+                                    <span>30 min</span>
+                                </div>
+                                <button class="btn btn-primary">Start Session</button>
+                            </div>
+                        </div>
+                        
+                        <div class="day-card">
+                            <h4>Programming - Python</h4>
+                            <p>Complete exercises on data structures. Focus on dictionary and list comprehensions.</p>
+                            <div class="card-actions">
+                                <div class="time-estimate">
+                                    <i class="far fa-clock"></i>
+                                    <span>60 min</span>
+                                </div>
+                                <button class="btn btn-primary">Start Session</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="heatmap-container">
+                    <h2 class="section-title"><i class="fas fa-calendar"></i> Study Heatmap</h2>
+                    <p>Your study activity over the past year</p>
+                    <div class="heatmap" id="heatmap">
+                    </div>
+                    <div class="heatmap-months">
+                        <span>Jan</span>
+                        <span>Feb</span>
+                        <span>Mar</span>
+                        <span>Apr</span>
+                        <span>May</span>
+                        <span>Jun</span>
+                        <span>Jul</span>
+                        <span>Aug</span>
+                        <span>Sep</span>
+                        <span>Oct</span>
+                        <span>Nov</span>
+                        <span>Dec</span>
+                    </div>
+                    <div class="heatmap-legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #ebedf0"></div>
+                            <span>No activity</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #c6e48b"></div>
+                            <span>1-30 mins</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #7bc96f"></div>
+                            <span>30-60 mins</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #239a3b"></div>
+                            <span>1-2 hours</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #196127"></div>
+                            <span>2+ hours</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h2 class="section-title"><i class="fas fa-brain"></i> Practice Questions</h2>
+                    <p>Answer these questions to strengthen your understanding in weak areas.</p>
+                    
+                    <div class="question-card">
+                        <p><strong>Mathematics:</strong> Find the derivative of f(x) = 3x² + 2x - 5</p>
+                        <div class="options">
+                            <div class="option">
+                                <input type="radio" name="math-question" id="option1">
+                                <label for="option1">f'(x) = 6x + 2</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="math-question" id="option2">
+                                <label for="option2">f'(x) = 3x + 2</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="math-question" id="option3">
+                                <label for="option3">f'(x) = 6x² + 2</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" name="math-question" id="option4">
+                                <label for="option4">f'(x) = 3x² + 2</label>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Check Answer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2023 ScholarSphere - AI Powered Exam Preparation</p>
+            <p>This is a prototype for demonstration purposes</p>
+        </footer>
+    </div>
+</body>
+</html>
